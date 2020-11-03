@@ -1,0 +1,26 @@
+[
+    {
+        "name": "2020 - Olympic Games, Tokyo (JPN)",
+        "id": "2909",
+        "year": "2020",
+        "type": "Olympic Games",
+        "fm": "",
+        "to": ""
+    },
+    {
+        "name": "2020 - ITTF World Team Qualification Event, Gondomar, (POR)",
+        "id": "5171",
+        "year": "2020",
+        "type": "Olympic Games",
+        "fm": "2020-01-22",
+        "to": "2020-01-26"
+    },
+    {
+        "name": "2020 - ITTF World Tour Platinum German Open, Magdeburg, (GER)",
+        "id": "5139",
+        "year": "2020",
+        "type": "World Tour / Pro Tour",
+        "fm": "2020-01-28",
+        "to": "2020-02-02"
+    }
+]
