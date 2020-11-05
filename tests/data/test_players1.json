@@ -1,0 +1,71 @@
+[
+    {
+        "name": "CHEN Meng",
+        "nameJa": "陳夢",
+        "id": "112019",
+        "country": "CHN",
+        "rank": 1,
+        "rating": 2316.111352732337,
+        "wins": 140,
+        "loses": 21,
+        "tournaments": {
+            "2587": true,
+            "2705": true,
+            "5146": true
+        },
+        "tournaments_last_update": "2020-04-19",
+        "points": 17915,
+        "rating_china": 2515.4288411739,
+        "wins_china": 50,
+        "loses_china": 16,
+        "points_EMA": -1,
+        "rating_EMA": -1,
+        "rating_china_EMA": -1
+    },
+    {
+        "name": "SUN Yingsha",
+        "nameJa": "孫穎莎",
+        "id": "131163",
+        "country": "CHN",
+        "rank": 3,
+        "rating": 2228.8596025702955,
+        "wins": 133,
+        "loses": 22,
+        "tournaments": {
+            "2728": true,
+            "2729": true,
+            "5146": true
+        },
+        "tournaments_last_update": "2020-04-19",
+        "points": 15165,
+        "rating_china": 2132.8395052910223,
+        "wins_china": 30,
+        "loses_china": 17,
+        "points_EMA": -1,
+        "rating_EMA": -1,
+        "rating_china_EMA": -1
+    },
+    {
+        "name": "ITO Mima",
+        "nameJa": "伊藤美誠",
+        "id": "117821",
+        "country": "JPN",
+        "rank": 2,
+        "rating": 2191.8625271984015,
+        "wins": 116,
+        "loses": 40,
+        "tournaments": {
+            "2587": true,
+            "2705": true,
+            "5146": true
+        },
+        "tournaments_last_update": "2020-04-19",
+        "points": 15440,
+        "rating_china": 2108.5569785066164,
+        "wins_china": 27,
+        "loses_china": 34,
+        "points_EMA": -1,
+        "rating_EMA": -1,
+        "rating_china_EMA": -1
+    }
+]

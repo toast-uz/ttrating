@@ -23,7 +23,9 @@ def test_Tornaments(cleanup):
     tournaments = ittf.Tournaments.read_json(filename_input)
     assert len(tournaments) == 3
     assert tournaments[0].id == '2909'
-    assert tournaments[1] < tournaments[2]
+    assert tournaments.by_id('5139').fm == "2020-01-28"
+    assert tournaments.by_name(
+        '2020 - Olympic Games, Tokyo (JPN)').id == "2909"
     filename_temp = './tests/data/temp_test_tournaments1.json'
     tournaments.to_json(filename_temp)
     tournaments2 = ittf.Tournaments.read_json(filename_temp)
