@@ -1,0 +1,74 @@
+[
+    {
+        "tournament_id": "2711",
+        "type": "Women's singles",
+        "round": "QUALIFICATION",
+        "valid": true,
+        "players_name": [
+            "ZHANG Mo",
+            "MOSTAFAVI Leili"
+        ],
+        "players_id": [
+            "110560",
+            "120112"
+        ],
+        "result": [
+            "4",
+            "2"
+        ]
+    },
+    {
+        "tournament_id": "2711",
+        "type": "Women's singles",
+        "round": "QUALIFICATION",
+        "valid": false,
+        "players_name": [
+            "ZHANG Mo",
+            "PETERMAN-VARGA Timea"
+        ],
+        "players_id": [
+            "110560",
+            ""
+        ],
+        "result": [
+            "4",
+            "2"
+        ]
+    },
+    {
+        "tournament_id": "2711",
+        "type": "Women's singles",
+        "round": "QUALIFICATION",
+        "valid": true,
+        "players_name": [
+            "MESHREF Dina",
+            "KIRICHENKO Anna"
+        ],
+        "players_id": [
+            "111656",
+            "114429"
+        ],
+        "result": [
+            "4",
+            "0"
+        ]
+    },
+    {
+        "tournament_id": "2711",
+        "type": "Women's singles",
+        "round": "QUALIFICATION",
+        "valid": true,
+        "players_name": [
+            "MOSTAFAVI Leili",
+            "ZHANG Mo"
+        ],
+        "players_id": [
+            "120112",
+            "110560"
+        ],
+        "result": [
+            "2",
+            "4"
+        ]
+    }
+]

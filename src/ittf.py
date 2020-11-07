@@ -1,3 +1,11 @@
+'''
+A common module for ttrating
+Copyright(c) 2020 Tatsuzo Osawa
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the MIT License:
+    https: // opensource.org/licenses/mit-license.php
+'''
+
 import json
 import dataclasses
 from dataclasses import field
@@ -16,9 +24,9 @@ class DataclassList(list):
 
     class DataclassJSONEncoder(json.JSONEncoder):
         def default(self, o):
-            if dataclasses.is_dataclass(o):
-                return dataclasses.asdict(o)
-            return super().default(o)
+            assert dataclasses.is_dataclass(o)
+            return dataclasses.asdict(o)
+        #    return super().default(o)   # Uncomment if the assertion fail.
 
     def to_json(self, filename):
         with open(filename, mode='w', encoding='utf-8') as f:
@@ -82,3 +90,28 @@ class Players(DataclassList):
     @classmethod
     def read_json(cls, filename):
         return Players(DataclassList.read_json(filename, Player))
+
+
+@dataclasses.dataclass()
+class Match:
+    tournament_id: str = ''
+    type: str = ''
+    round: str = ''
+    valid: bool = True
+    # Use list not set in order to serialize to JSON.
+    players_name: list = field(default_factory=list)
+    players_id: list = field(default_factory=list)
+    result: list = field(default_factory=list)  # number or 'WO'
+
+    def __eq__(self, other):
+        assert isinstance(other, Match)
+        return ((self.tournament_id == other.tournament_id) and
+                (self.type == other.type) and
+                (self.round == other.round) and
+                (set(self.players_name) == set(other.players_name)))
+
+
+class Matches(DataclassList):
+    @classmethod
+    def read_json(cls, filename):
+        return Matches(DataclassList.read_json(filename, Match))
